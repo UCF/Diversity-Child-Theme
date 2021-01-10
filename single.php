@@ -1,6 +1,10 @@
-<?php get_header(); the_post(); ?>
+<?php
+use Diversity\Theme\Includes\Posts;
+
+get_header(); the_post(); ?>
 
 <?php
+$header_media = Posts\get_post_header_media( $post );
 $social = ( shortcode_exists( 'ucf-social-links' ) ) ? do_shortcode( '[ucf-social-links]' ) : '';
 ?>
 
