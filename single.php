@@ -18,7 +18,7 @@ $social = ( shortcode_exists( 'ucf-social-links' ) ) ? do_shortcode( '[ucf-socia
 	</div>
 	<div class="container mb-5 pb-sm-4">
 		<div class="row mb-4">
-			<div class="col-lg-10 offset-lg-1 px-lg-5 col-xl-8 offset-xl-2 px-xl-3">
+			<div class="col-lg-10 offset-lg-1">
 				<div class="post-content">
 					<?php the_content(); ?>
 				</div>
