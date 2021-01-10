@@ -20,7 +20,7 @@ $recent_posts = Posts\get_post_recent( $post );
 	<div class="container mb-5 pb-sm-4">
 		<div class="row mb-4">
 			<div class="col-lg-10 offset-lg-1">
-				<div class="post-content">
+				<div class="post-content mb-4 mb-md-5">
 					<?php the_content(); ?>
 				</div>
 
