@@ -5,7 +5,8 @@ get_header(); the_post(); ?>
 
 <?php
 $header_media = Posts\get_post_header_media( $post );
-$social = ( shortcode_exists( 'ucf-social-links' ) ) ? do_shortcode( '[ucf-social-links]' ) : '';
+$social       = ( shortcode_exists( 'ucf-social-links' ) ) ? do_shortcode( '[ucf-social-links]' ) : '';
+$recent_posts = Posts\get_post_recent( $post );
 ?>
 
 <article class="<?php echo $post->post_status; ?> post-list-item" aria-label="<?php echo esc_attr( get_the_title() ); ?>">
@@ -30,6 +31,11 @@ $social = ( shortcode_exists( 'ucf-social-links' ) ) ? do_shortcode( '[ucf-socia
 				<?php endif; ?>
 			</div>
 		</div>
+
+		<?php if ( $recent_posts ) : ?>
+		<hr class="mb-4 mb-md-5">
+		<?php echo $recent_posts; ?>
+		<?php endif; ?>
 	</div>
 </article>
 
