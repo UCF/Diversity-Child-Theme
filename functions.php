@@ -11,4 +11,8 @@ include_once DIVERSITY_THEME_DIR . 'includes/header-functions.php';
 include_once DIVERSITY_THEME_DIR . 'includes/post-functions.php';
 include_once DIVERSITY_THEME_DIR . 'includes/breadcrumb-functions.php';
 
-// Add other includes to this file as needed.
+// Plugin extras/overrides
+
+if ( class_exists( 'UCF_Section_Common' ) ) {
+	include_once DIVERSITY_THEME_DIR . 'includes/section-functions.php';
+}
