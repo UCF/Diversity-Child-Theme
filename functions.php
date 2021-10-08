@@ -1,11 +1,18 @@
 <?php
-namespace MyProject\Theme;
+namespace Diversity\Theme;
 
-define( 'MYPROJECT_THEME_DIR', trailingslashit( get_stylesheet_directory() ) );
+define( 'DIVERSITY_THEME_DIR', trailingslashit( get_stylesheet_directory() ) );
 
 
 // Theme foundation
-include_once MYPROJECT_THEME_DIR . 'includes/config.php';
-include_once MYPROJECT_THEME_DIR . 'includes/meta.php';
+include_once DIVERSITY_THEME_DIR . 'includes/config.php';
+include_once DIVERSITY_THEME_DIR . 'includes/meta.php';
+include_once DIVERSITY_THEME_DIR . 'includes/header-functions.php';
+include_once DIVERSITY_THEME_DIR . 'includes/post-functions.php';
+include_once DIVERSITY_THEME_DIR . 'includes/breadcrumb-functions.php';
 
-// Add other includes to this file as needed.
+// Plugin extras/overrides
+
+if ( class_exists( 'UCF_Section_Common' ) ) {
+	include_once DIVERSITY_THEME_DIR . 'includes/section-functions.php';
+}

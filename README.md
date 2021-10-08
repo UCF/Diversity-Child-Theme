@@ -43,4 +43,4 @@ Note that compiled, minified css and js files are included within the repo.  Cha
 
 ## Contributing
 
-Want to submit a bug report or feature request?  Check out our [contributing guidelines](https://github.com/UCF/Diversity-Child-Theme/blob/master/CONTRIBUTING.md) for more information.  We'd love to hear from you!
+Want to submit a bug report or feature request? Check out our [contributing guidelines](https://github.com/UCF/Diversity-Child-Theme/blob/master/CONTRIBUTING.md) for more information. We'd love to hear from you!
